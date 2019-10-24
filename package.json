@@ -1,0 +1,43 @@
+{
+  "name": "FEC_Checkout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js",
+    "build": "webpack -d --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "file-loader": "^4.2.0",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.7.4",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.3",
+    "path": "^0.12.7",
+    "react": "^16.10.2",
+    "react-alice-carousel": "^1.15.3",
+    "react-dom": "^16.10.2",
+    "react-modal": "^3.10.1",
+    "react-responsive-carousel": "^3.1.50",
+    "url-loader": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "nodemon": "^1.19.2",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  }
+}
