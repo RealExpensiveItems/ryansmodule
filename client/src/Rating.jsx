@@ -8,9 +8,10 @@ class Rating extends React.Component {
   }
 
   render() {
-    if (4.5 <= this.props.rating.rating_avg < 5) {
+    console.log(this.props.rating)
+    if (4.5 <= this.props.rating.rating_avg && this.props.rating.rating_avg < 5) {
       return (
-        <div>
+        // <div>
           <div className="star-wrapper">
             <img className="star10 rating-stars"></img>
             <img className="star10 rating-stars"></img>
@@ -18,12 +19,12 @@ class Rating extends React.Component {
             <img className="star10 rating-stars"></img>
             <img className="star5 rating-stars"></img>        
           </div>
-        </div>
+        // </div>
 
       );
-    } else if (4 <= this.props.rating.rating_avg < 4.5) {
+    } else if (4 <= this.props.rating.rating_avg && this.props.rating.rating_avg < 4.5) {
       return (
-        <div>
+        // <div>
           <div className="star-wrapper">
             <img className="star10 rating-stars"></img>
             <img className="star10 rating-stars"></img>
@@ -31,9 +32,9 @@ class Rating extends React.Component {
             <img className="star10 rating-stars"></img>
             <img className="star0 rating-stars"></img>
           </div>
-        </div>
+        // </div>
       )
-    } else if (3.5 <= this.props.rating.rating_avg < 4) {
+    } else if (3.5 <= this.props.rating.rating_avg && this.props.rating.rating_avg < 4) {
       return (
         // <div>
           <div className="star-wrapper">
@@ -45,7 +46,7 @@ class Rating extends React.Component {
           </div>
         // </div>
       )
-    } else if (3 <= this.props.rating.rating_avg < 3.5) {
+    } else if (3 <= this.props.rating.rating_avg && this.props.rating.rating_avg < 3.5) {
       return (
         // <div>
           <div className="star-wrapper">
@@ -57,7 +58,7 @@ class Rating extends React.Component {
           </div>
         // </div>
       )
-    } else if (2.5 <= this.props.rating.rating_avg < 3) {
+    } else if (2.5 <= this.props.rating.rating_avg && this.props.rating.rating_avg < 3) {
       return (
         // <div>
           <div className="star-wrapper">
@@ -69,7 +70,7 @@ class Rating extends React.Component {
           </div>
         // </div>
       )
-    } else if (2 <= this.props.rating.rating_avg < 2.5) {
+    } else if (2 <= this.props.rating.rating_avg && this.props.rating.rating_avg < 2.5) {
       return (
         // <div>
           <div className="star-wrapper">
@@ -81,7 +82,7 @@ class Rating extends React.Component {
           </div>
         // </div>
       )
-    } else if (1.5 <= this.props.rating.rating_avg < 2) {
+    } else if (1.5 <= this.props.rating.rating_avg && this.props.rating.rating_avg < 2) {
       return (
         // <div>
           <div className="star-wrapper">
@@ -93,7 +94,7 @@ class Rating extends React.Component {
           </div>
         // </div>
       )
-    } else if (1 <= this.props.rating.rating_avg < 1.5) {
+    } else if (1 <= this.props.rating.rating_avg && this.props.rating.rating_avg < 1.5) {
       return (
         // <div>
           <div className="star-wrapper">
@@ -105,7 +106,7 @@ class Rating extends React.Component {
           </div>
         // </div>
       )
-    } else if (0.5 <= this.props.rating.rating_avg < 1) {
+    } else if (0.5 <= this.props.rating.rating_avg && this.props.rating.rating_avg < 1) {
       return (
         // <div>
           <div className="star-wrapper">
@@ -117,9 +118,9 @@ class Rating extends React.Component {
           </div>
         // </div>
       )
-    } else if (0 <= this.props.rating.rating_avg < 0.5) {
+    } else if (0 <= this.props.rating.rating_avg && this.props.rating.rating_avg < 0.5) {
       return (
-        <div>
+        // <div>
           <div className="star-wrapper">
             <img className="star0 rating-stars"></img>
             <img className="star0 rating-stars"></img>
@@ -127,11 +128,11 @@ class Rating extends React.Component {
             <img className="star0 rating-stars"></img>   
             <img className="star0 rating-stars"></img>
           </div>
-        </div>
+        // </div>
       )
     } else {
       return (
-        <div>
+        // <div>
           <div className="star-wrapper">
             <img className="star10 rating-stars"></img>
             <img className="star10 rating-stars"></img>
@@ -139,7 +140,7 @@ class Rating extends React.Component {
             <img className="star10 rating-stars"></img>
             <img className="star10 rating-stars"></img>
           </div>
-        </div>
+        // </div>
       )
     }
   }

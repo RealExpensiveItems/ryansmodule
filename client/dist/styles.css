@@ -21,29 +21,32 @@ button {
 
 .image-description {
   font-size: 14px;
-  font-family: 'Roboto', 'Helvetica Neue';
+  font-family: 'Roboto-me', 'Helvetica Neue';
 }
 
 #color-name {
   color: #767676;
 }
 
-.container {
+.container-checkout {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: 3%;
+  margin-left: 7%;
+  margin-right: 7%;
+  /* float: center; */
   /* margin-right: 3%; */
 }
 
-.nav {
+.nav-gender-category {
   font-size: 14px;
-  font-family: 'Roboto', 'Helvetica Neue';
+  font-family: 'Roboto-me', 'Helvetica Neue';
   color: #3278ae;
   flex: 0 1 auto;
   width: 100%;
   min-width: 0;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -126,7 +129,7 @@ button {
 
 .brand {
   font-size: 14px;
-  font-family: 'Roboto-Bold', 'Roboto', 'Helvetica Neue';
+  font-family: 'Roboto-Bold', 'Roboto-me', 'Helvetica Neue';
   color: #3278ae;
 }
 
@@ -146,7 +149,7 @@ button {
 
 .rating-info {
   color: #292929!important;
-  font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+  font-family: 'Roboto-me', "Helvetica Neue", Helvetica, Arial, sans-serif!important;
   font-size: 14px;
   padding-left: 1px;
   border: none;
@@ -205,13 +208,13 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  font-family: 'Roboto-Condensed', 'Roboto';
+  font-family: 'Roboto-Condensed', 'Roboto-me';
   font-size: 16px;
   padding: 0px 0px 3px 18%;
   /* margin-left: 100px; */
 }
 
-.price {
+.price-me {
   font-family: 'Sentinel-Semibold', 'Sentinel';
   font-size: 20px;
 }
@@ -232,7 +235,7 @@ button {
   max-width: 598px;
   width: auto;
   font-size: 16px;
-  font-family: 'Roboto', 'Helvetica Neue';
+  font-family: 'Roboto-me', 'Helvetica Neue';
   line-height: 1.5;
   color: #292929;
   padding: 15px 15px;
@@ -278,7 +281,7 @@ button {
 
 #modal-title {
   color: #292929;
-  font-family: 'Sentinel', 'Roboto', 'Helvetica Neue';
+  font-family: 'Sentinel', 'Roboto-me', 'Helvetica Neue';
   font-size: 20px;
   margin-top: 30px;
   margin-bottom: none;
@@ -286,7 +289,7 @@ button {
 
 .size-color-wrapper {
   font-size: 14px;
-  font-family: 'Roboto-Condensed', 'Roboto';
+  font-family: 'Roboto-Condensed', 'Roboto-me';
 }
 
 .size-quantity-wrapper {
@@ -298,7 +301,7 @@ button {
   padding-left: 30px;
   /* position: absolute; */
   font-size: 16px;
-  font-family: 'Roboto', 'Helvetica Neue';
+  font-family: 'Roboto-me', 'Helvetica Neue';
 }
 
 #minus-quantity {
@@ -354,7 +357,7 @@ button {
   border-radius: 3px;
   text-align: center;
   font-size: 16px;
-  font-family: 'Roboto', 'Helvetica Neue';
+  font-family: 'Roboto-me', 'Helvetica Neue';
 }
 
 .thumbnails {
@@ -421,7 +424,7 @@ button {
 .size-chart-button {
   padding-left: 10px;
   color: #3278ae;
-  font-family: 'Roboto';
+  font-family: 'Roboto-me';
 }
 
 .size-chart-button:hover {
@@ -435,7 +438,7 @@ button {
   border-radius: 3px;
   background-image: none;
   background-color: #fff;
-  font-family: 'Roboto', 'Helvetica Neue';
+  font-family: 'Roboto-me', 'Helvetica Neue';
   font-size: 16px;
   width: 110px;
   height: 40px;
@@ -461,7 +464,7 @@ button {
   border: .1rem solid #e4ac00;
   border-width: 1px;
   font-size: 16px;
-  font-family: 'Roboto', 'Helvetica-Neue';
+  font-family: 'Roboto-me', 'Helvetica-Neue';
   text-align: start;
   vertical-align: middle;
   width: 330px;
@@ -506,7 +509,7 @@ button {
   border: none;
   background-color: none;
   font-size: 16px;
-  font-family: 'Roboto-Bold', 'Roboto', 'Helvetica Neue';
+  font-family: 'Roboto-Bold', 'Roboto-me', 'Helvetica Neue';
 }
 
 .add-to-container {
@@ -516,7 +519,7 @@ button {
 #add-to-cart {
   transform: translate(-10px, 0);
   font-size: 16px;
-  font-family: 'Roboto', 'Helvetica Neue';
+  font-family: 'Roboto-me', 'Helvetica Neue';
   width: 95%;
   height: 50px;
   background-color: #426c90;
@@ -531,7 +534,7 @@ button {
   width: 45%;
   height: 42px;
   font-size: 16px;
-  font-family: 'Roboto', 'Helvetica Neue';
+  font-family: 'Roboto-me', 'Helvetica Neue';
   border-color: #c5c5c5;
   margin-top: 10px;
   margin-right: 5%;
@@ -550,7 +553,7 @@ button {
 #find-store {
   padding-left: 27px;
   font-size: 16px;
-  font-family: 'Roboto', 'Helvetica Neue';
+  font-family: 'Roboto-me', 'Helvetica Neue';
   color: #3278ae;
 }
 
@@ -593,7 +596,7 @@ button {
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Roboto-me';
   src: url('./roboto/Roboto-Regular.ttf') format('truetype');
 }
 

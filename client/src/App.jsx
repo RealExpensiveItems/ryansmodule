@@ -49,9 +49,13 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    // this.getOneProduct(Math.ceil(Math.random() * 25));
-    this.getOneProduct(4);
+    this.getOneProduct(Math.ceil(Math.random() * 25));
+    // this.getOneProduct(4);
     this.showCarouselButton();
+  }
+
+  componentWillUpdate(id) {
+    this.getOneProduct(id);
   }
 
   // UNSAFE_componentDidUpdate() {
@@ -65,7 +69,7 @@ class App extends React.Component {
   }
   
   getOneProduct(id) {
-    axios.get(`/product/${id}`)
+    axios.get(`/${id}`)
       .then((results) => {
         console.log(results.data);
         this.setState({
@@ -171,11 +175,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="nav">
-          <nav>
+      <div className="container-checkout">
+        <div className="nav-gender-category">
+          <div className="">
             <Gender gender={this.state.gender}/> > <Category category={this.state.category} />
-          </nav>
+          </div>
         </div>
           <div className="carousel-wrapper">
             <button id="top-carousel" className="carousel-btn" onClick={this.scrollUp} hidden={true}><img id="top-btn"/></button>
@@ -202,7 +206,7 @@ class App extends React.Component {
               <button className="rating-info rating-count">({this.state.rating.rating_ct})</button>
               <div className="item-id">Item #{this.state.id}</div>
             </div>
-            <div className="price">
+            <div className="price-me">
               ${this.state.price.toString().includes('.') ? this.state.price : this.state.price.toString() + '.00'}
             </div>
             <br/>

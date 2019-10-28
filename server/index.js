@@ -15,7 +15,7 @@ app.use(cors());
 
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
-app.get(`/product/:id`, (req, res) => {
+app.get(`/:id`, (req, res) => {
   const { id } = req.params;
   db.find({ id }, (err, results) => {
     if (err) {
